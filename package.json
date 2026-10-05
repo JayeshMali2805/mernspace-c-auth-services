@@ -1,28 +1,28 @@
 {
-    "name": "auth-service",
-    "version": "1.0.0",
-    "description": "The user management service",
-    "homepage": "https://github.com/JayeshMali2805/mernspace-c-auth-services#readme",
-    "bugs": {
-        "url": "https://github.com/JayeshMali2805/mernspace-c-auth-services/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/JayeshMali2805/mernspace-c-auth-services.git"
-    },
-    "license": "ISC",
-    "author": "Jayesh M <jayesh@coder.com>",
-    "type": "commonjs",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node src/server.js",
-        "format:fix": "prettier . --write",
-        "format:check": "prettier . --check",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-        "@types/node": "^26.6.4",
-        "prettier": "3.9.9",
-        "typescript": "^7.0.2"
-    }
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "The user management service",
+  "homepage": "https://github.com/JayeshMali2805/mernspace-c-auth-services#readme",
+  "bugs": {
+    "url": "https://github.com/JayeshMali2805/mernspace-c-auth-services/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayeshMali2805/mernspace-c-auth-services.git"
+  },
+  "license": "ISC",
+  "author": "Jayesh M <jayesh@coder.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {  
+    "dev": "node src/server.js",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "prettier": "3.9.9",
+    "typescript": "^7.0.2"
+  }
 }
