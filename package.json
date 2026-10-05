@@ -14,15 +14,20 @@
   "author": "Jayesh M <jayesh@coder.com>",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {  
+  "scripts": {
     "dev": "node src/server.js",
     "format:fix": "prettier . --write",
     "format:check": "prettier . --check",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
     "prettier": "3.9.9",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
   }
 }
