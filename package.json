@@ -11,11 +11,13 @@
     "url": "git+https://github.com/JayeshMali2805/mernspace-c-auth-services.git"
   },
   "license": "ISC",
+  "type": "module",
   "author": "Jayesh M <jayesh@coder.com>",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server.js",
+    "dev": "tsc && node dist/server.js",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "format:fix": "prettier . --write",
     "format:check": "prettier . --check",
     "lint:fix": "eslint . --fix   ",
@@ -38,5 +40,8 @@
       "npm run format:fix",
       "npm run lint:fix"
     ]
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5"
   }
 }
