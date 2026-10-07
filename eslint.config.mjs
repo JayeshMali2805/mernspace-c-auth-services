@@ -12,7 +12,9 @@ export default tseslint.config(
   {
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['jest.config.js'],
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -20,6 +22,17 @@ export default tseslint.config(
     rules: {
       'no-console': ['error', { allow: ['error'] }],
       'dot-notation': 'error',
+    },
+  },
+
+  {
+    files: ['**/*.spec.ts'],
+    languageOptions: {
+      parserOptions: {
+        projectService: false,
+        project: './tsconfig.test.json',
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
   },
 )
